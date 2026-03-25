@@ -1,4 +1,29 @@
 {
   "name": "frontend",
-  "packageManager": "yarn@4.3.1"
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "dev": "vite",
+    "lint:fix": "eslint --fix",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "start": "vite",
+    "typecheck": "tsc -b --noemit"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.95.0",
+    "@tanstack/react-router": "^1.168.2",
+    "@tanstack/react-router-devtools": "^1.166.11",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@tanstack/router-plugin": "^1.167.3",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.1"
+  }
 }
